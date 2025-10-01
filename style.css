@@ -1,0 +1,507 @@
+@font-face {
+    font-family: IranSansX;
+    src: url("fonts/IranSansXRegular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: IranSansXBold;
+    src: url("fonts/IRANSansXBold.ttf");
+}
+
+@keyframes vibratingPhone {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.topLogo {
+    display: inline-block;
+}
+
+.logo {
+    padding-right: 30px;
+    vertical-align: middle;
+    float: right;
+}
+
+.leftHeader {
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+    color: #16254c;
+    font-size: 25px;
+}
+
+.HeaderArrow {
+    float: left;
+}
+
+.SocialHeaderIcon {
+    text-decoration: none;
+    color: #16254c;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.VibratingPhone {
+    font-size: 34px;
+    display: inline-block;
+    animation: vibratingPhone 1.5s infinite;
+}
+
+.topBanner {
+    width: 100%;
+    height: auto;
+}
+
+.bodyProp {
+    direction: rtl;
+    font-family: IranSansXBold, serif;
+    box-sizing: border-box;
+}
+
+#mainNav {
+
+    border-radius: 16px;
+    background: #1d3a70;
+
+}
+
+#mainNav > .navItems {
+    list-style: none;
+    margin: 0;
+
+}
+
+#mainNav > .navItems > .navItem {
+    display: inline-block;
+    position: relative;
+}
+
+#mainNav > .navItems > .navItem > .navLink {
+    display: block;
+    padding: 12px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+#mainNav > .navItems > .navItem > .navLink::after {
+    content: "";
+    position: absolute;
+    right: 13px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #29bcbd;
+
+    transition: all 0.4s ease;
+}
+
+#mainNav > .navItems > .navItem > .navLink:hover::after {
+    width: 85%;
+
+
+}
+
+#mainNav > .navItems > .navItem:hover > .subMenu {
+    display: block;
+}
+
+.lastItem {
+    background-color: #1d3a70;
+    float: left;
+    border-radius: 16px;
+}
+
+.subMenu {
+    position: absolute;
+    color: white;
+    top: 100%;
+    right: 0; /* RTL alignment */
+    background-color: #29bcbd;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(13, 30, 64, 0.18);
+    min-width: 200px;
+    padding: 8px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navItem:hover > .subMenu {
+    display: block;
+
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.subMenu a {
+    display: block;
+    padding: 10px 16px;
+    color: #16254c;
+    text-decoration: none;
+    font-size: 15px;
+    transition: font-size 0.3s;
+}
+
+.subMenu a:hover,
+.subMenu a:focus {
+    font-size: 18px;
+    color: #0f2a4a;
+    outline: none;
+}
+
+.userIcon {
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.navLogin {
+    position: relative;
+}
+
+.navLogin:hover {
+
+    background-color: #2CBEBE;
+    transition: all 0.3s ease-out;
+}
+
+.navLogin:hover::after {
+    background-color: #1d3a70;
+}
+
+.navArrowColor {
+    color: #fff;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.navArrow {
+
+    display: inline-block; /* برای transform لازم است */
+    transition: transform 0.4s ease; /* انیمیشن نرم */
+
+}
+
+.navLink:hover .navArrow {
+    transform: rotate(-90deg); /* چرخش ۹۰ درجه */
+    color: #2CBEBE;
+}
+
+.fixedCallBtn {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    background-color: #1d3a70;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000; /* همیشه بالا باشه */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fixedCallBtn:hover {
+    background-color: #28bdbe;
+}
+
+.backToTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #1d3a70;
+    color: #fff;
+    padding: 12px 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backToTopBtn:hover {
+    background-color: #28bdbe;
+}
+
+.menuSeparator {
+    font-size: 24px;
+    vertical-align: middle;
+    color: #2CBEBE;
+}
+/* حالت اولیه: شفاف (بنر زیرش دیده میشه) */
+#mainNav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+     /* وقتی بالایی، شفاف باشه */
+    backdrop-filter: none;
+    box-shadow: none;
+    transition: background-color 220ms ease, backdrop-filter 220ms ease, box-shadow 220ms ease;
+}
+
+/* وقتی صفحه به اندازه threshold اسکرول کرد، این کلاس اضافه میشه و هدر شیشه‌ای میشه */
+#mainNav.scrolled {
+    background-color: rgba(29,58,114,0.75);   /* رنگ پایه‌ی شیشه‌ای */
+    backdrop-filter: blur(10px) saturate(120%);
+    box-shadow: 0 6px 20px rgba(13,30,64,0.25);
+}
+/* اندازه و مرکز کردن کلی اسلایدر */
+.my-blaze {
+    max-width: 1100px;    /* اندازه دلخواه */
+    margin: 26px auto;    /* وسط صفحه */
+    height: 380px;        /* ارتفاع اسلایدها */
+    --blaze-slide-gap: 12px; /* مقدار فاصله بین اسلایدها (CSS var blaze uses) */
+}
+
+/* مطمئن شو که محتوای اسلاید کل ارتفاع رو اشغال کنه */
+.my-blaze .blaze-track,
+.my-blaze .blaze-track > * {
+    height: 100%;
+}
+
+/* تصویر داخل اسلاید */
+.my-blaze .blaze-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* کنترل‌ها زیر اسلایدر */
+.my-blaze .blaze-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* دکمه‌های nav */
+.my-blaze .blaze-prev,
+.my-blaze .blaze-next {
+    background: #1d3a70;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    font-size: 16px;
+}
+
+/* دات‌ها (پگینیشن) */
+.my-blaze .blaze-pagination button {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.35);
+    border: none;
+    transition: all .28s ease;
+    margin: 0 4px;
+}
+.my-blaze .blaze-pagination button[aria-current="true"] {
+    width: 28px;
+    border-radius: 12px;
+    background: #29bcbd;
+}
+.hero-slider {
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    position: relative;
+}
+
+.hero-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: right;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: IranSansXBold, sans-serif;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #29bcbd;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #1d3a70;
+}
+
+/* کنترل‌ها */
+.blaze-prev, .blaze-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    font-size: 26px;
+    padding: 1px 17px;
+    border-radius: 10%;
+    cursor: grab;
+    transition: background 0.3s;
+    font-family: IranSansXBold;
+}
+
+.blaze-prev:hover, .blaze-next:hover {
+    background: rgba(0,0,0,0.7);
+}
+
+.blaze-prev { left: 20px; }
+.blaze-next { right: 20px; }
+
+.blaze-pagination {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+/* Container کلی */
+.insurance-boxes {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.insurance-boxes .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* هر باکس */
+.insurance-boxes .box {
+    background: #28bdbe;
+    color: #fff;
+    flex: 1 1 calc(33.33% - 20px); /* ۳ ستون در دسکتاپ */
+    min-width: 250px; /* حداقل اندازه باکس */
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.insurance-boxes .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* جای آیکون */
+/* جای آیکون (حالا برای تصویر) */
+.insurance-boxes .box .icon img {
+    width: 80px;  /* عرض دلخواه */
+    height: 80px; /* ارتفاع دلخواه */
+    object-fit: contain; /* تصویر رو بدون برش کامل داخل محدوده جا بده */
+    margin-bottom: 12px;
+}
+
+/* متن داخل باکس */
+.insurance-boxes .box h3 {
+    font-size: 25px;
+    font-family: IranSansXBold, sans-serif;
+}
+
+/* ریسپانسیو موبایل */
+@media screen and (max-width: 900px) {
+    .insurance-boxes .box {
+        flex: 1 1 calc(50% - 20px); /* دو ستون */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .insurance-boxes .box {
+        flex: 1 1 100%; /* یک ستون */
+    }
+}
+.orgText{
+    margin: 0 auto;
+    font-size: 24px;
+    color: #1d3a70;
+    text-align: center;
+}
