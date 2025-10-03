@@ -133,9 +133,7 @@ html {
 
 }
 
-#mainNav > .navItems > .navItem:hover > .subMenu {
-    display: block;
-}
+
 
 .lastItem {
     background-color: #1d3a70;
@@ -160,13 +158,17 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    pointer-events: none; /* prevent invisible submenu from catching pointer */
+    visibility: hidden; /* hide from pointer/assistive tech until visible */
 }
 
 .navItem:hover > .subMenu {
+    /* keep same layout (display stays flex) */
     display: block;
-
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto; /* allow interaction when visible */
+    visibility: visible;
 }
 
 .subMenu a {
