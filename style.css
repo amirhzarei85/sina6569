@@ -46,7 +46,7 @@ html {
 }
 
 .topLogo {
-    display: inline-block;
+    width: auto;
 }
 
 .logo {
@@ -56,9 +56,9 @@ html {
 }
 
 .leftHeader {
+    float: left;
     padding-right: 20px;
     padding-left: 20px;
-    float: left;
     color: #16254c;
     font-size: 25px;
 }
@@ -236,7 +236,7 @@ html {
     padding: 12px 20px;
     border-radius: 30px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
     z-index: 1000; /* همیشه بالا باشه */
@@ -483,6 +483,7 @@ html {
     font-size: 25px;
     font-family: IranSansXBold, sans-serif;
 }
+
 .orgText {
     margin: 0 auto;
     font-size: 24px;
