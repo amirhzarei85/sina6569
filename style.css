@@ -90,6 +90,7 @@ html {
     direction: rtl;
     font-family: IranSansXBold, serif;
     box-sizing: border-box;
+    background-color: #16254c;
 }
 
 #mainNav {
