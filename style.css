@@ -111,7 +111,7 @@ html {
 
 #mainNav > .navItems > .navItem > .navLink {
     display: block;
-    padding: 12px 18px;
+    padding: 12px 23px;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
@@ -433,60 +433,45 @@ html {
     text-align: center;
 }
 
-/* Container کلی */
-.insurance-boxes {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
-
-.insurance-boxes .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-/* هر باکس */
-.insurance-boxes .box {
-    background: #28bdbe;
-    color: #fff;
-    flex: 1 1 calc(33.33% - 20px); /* ۳ ستون در دسکتاپ */
-    min-width: 250px; /* حداقل اندازه باکس */
-    height: 180px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.insurance-boxes .box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* جای آیکون */
-/* جای آیکون (حالا برای تصویر) */
-.insurance-boxes .box .icon img {
-    width: 80px; /* عرض دلخواه */
-    height: 80px; /* ارتفاع دلخواه */
-    object-fit: contain; /* تصویر رو بدون برش کامل داخل محدوده جا بده */
-    margin-bottom: 12px;
-}
-
-/* متن داخل باکس */
-.insurance-boxes .box h3 {
-    font-size: 25px;
-    font-family: IranSansXBold, sans-serif;
-}
-
 .orgText {
     margin: 0 auto;
     font-size: 24px;
     color: #1d3a70;
     text-align: center;
 }
+.insBoxItem 
+{
+    width: 100%;
+    height: auto;
+    background-color: #28bdbe;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    justify-content: center;
+    transition: transform 0.3s
+    ease, box-shadow 0.3s
+    ease;
+    
+}
+.insBoxItem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.icon  {
+    width: 80px; /* عرض دلخواه */
+    height: 80px; /* ارتفاع دلخواه */
+    margin: 12px auto;
+    display: block;
+    padding: 6px;
+    text-align: center;
+}
+.insBoxDetails{
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.insContStyle{
+    margin: 20px auto;
+}
+
