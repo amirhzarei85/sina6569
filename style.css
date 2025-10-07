@@ -1,19 +1,17 @@
 @font-face {
     font-family: IranSansX;
-    src: url("fonts/IranSansXRegular.ttf");
+    src: url("fonts/IRANSansXFaNum-RegularD4.ttf");
 }
-
+@font-face {
+    font-family: IranSansXBold;
+    src: url("fonts/IRANSansXBold.ttf");
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-@font-face {
-    font-family: IranSansXBold;
-    src: url("fonts/IRANSansXBold.ttf");
 }
 
 @keyframes vibratingPhone {
@@ -87,12 +85,12 @@ html {
 
 .bodyProp {
     direction: rtl;
-    font-family: IranSansXBold, serif;
+    font-family: IranSansX, serif;
     box-sizing: border-box;
 }
 
 #mainNav {
-
+    font-family: IranSansXBold, serif;
     border-radius: 16px;
     background: #1d3a70;
 
@@ -375,7 +373,7 @@ html {
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    font-family: IranSansXBold, sans-serif;
+    font-family: IranSansX, sans-serif;
 }
 
 .hero-content p {
@@ -411,7 +409,7 @@ html {
     border-radius: 10%;
     cursor: grab;
     transition: background 0.3s;
-    font-family: IranSansXBold;
+    font-family: IranSansX;
 }
 
 .blaze-prev:hover, .blaze-next:hover {
