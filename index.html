@@ -21,208 +21,55 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/blaze-slider/dist/blaze-slider.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/include.js"></script>
 </head> 
-<header id="top">
-    <div class="ContainerDiv">
-        <div>
-            <a href="tel:+989184449208"><img src="images/topBanner.png" height="76" width="1890" class="topBanner"
-                                             title="تخفیف شگفت انگیز" alt="DiscountBanner"/></a>
-        </div>
-        <div class="topHeader">
-            <div class="topLogo">
-                <a href="index.html" class="logo"><img src="images/logo.png" height="33" width="275"
-                                                       alt="Insurance Logo"
-                                                       title="Sina Insurance"/>
-                </a>
-            </div>
-            <div class="leftHeader">
-
-                <div>
-                    «با آرامش خاطر زندگی کنید، نمایندگی ۶۵۶۹»
-
-                    <a href="tel:+989184449208"> <i class="fa-solid fa-mobile-vibrate SocialHeaderIcon VibratingPhone"
-                                                    title="Mobile Phone Number"></i></a>
-                    <a href="tel:+988132530154"> <i class="fa-solid fa-tty SocialHeaderIcon"
-                                                    title="Insurance Shop Phone Number"></i></a>
-                    <a href="https://www.instagram.com/bimesina_torabi/"> <i
-                            class="fa-brands fa-instagram SocialHeaderIcon"
-                            title="Instagram Page"></i></a>
-                    <a href="https://t.me/bimeh_torabi"> <i class="fa-brands fa-telegram SocialHeaderIcon"
-                                                            title="Telegram Page"></i></a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
-</header>
 <body class="bodyProp">
-<nav id="mainNav" aria-label="Main Navigation">
-    <ul class="navItems">
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor"></i>
-
-                صفحه اصلی
-            </a>
-
-
-        </li>
-        <span class="menuSeparator">|</span>
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor navArrow"></i>
-                بیمه خودرو
-            </a>
-            <div class="subMenu">
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-car"></i>
-                    شخص ثالث
-                </a>
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-car"></i>
-                    بدنه
-                </a>
-            </div>
-        </li>
-        <span class="menuSeparator">|</span>
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor navArrow"></i>
-
-                بیمه مسئولیت
-            </a>
-            <div class="subMenu">
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-user-tie"></i>
-                    کارفرما
-                </a>
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-users"></i>
-                    عمومی</a>
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-user-check"></i>
-                    مدیران</a>
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-user-doctor"></i>
-                    پزشکان</a>
-            </div>
-        </li>
-        <span class="menuSeparator">|</span>
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor navArrow"></i>
-                بیمه آتش سوزی
-            </a>
-            <div class="subMenu">
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-fire"></i>
-
-                    نکات مهم خرید </a>
-            </div>
-        </li>
-        <span class="menuSeparator">|</span>
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor navArrow"></i>
-                بیمه عمر
-            </a>
-            <div class="subMenu">
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-dollar"></i>
-                    راهنمای اقساط </a>
-            </div>
-        </li>
-        <span class="menuSeparator">|</span>
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor "></i>
-                مجله بیمه
-            </a>
-        </li>
-        <span class="menuSeparator">|</span>
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor navArrow"></i>
-                درباره ما
-            </a>
-            <div class="subMenu">
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-flag-checkered"></i>
-                    شروع به کار </a>
-                <a href="#" class="navLink">
-                    <i class="fa-solid  fa-location"></i>
-                    آدرس دفتر </a>
-            </div>
-        </li>
-        <span class="menuSeparator">|</span>
-        <li class="navItem">
-            <a href="#" class="navLink">
-                <i class="fa-solid fa-angles-left navArrowColor"></i>
-                تماس با ما
-            </a>
-        </li>
-        <li class="navItem lastItem navLogin">
-            <a href="#" class="navLink ">
-                <i class="fa-solid fa-user-tie userIcon"></i>
-                ورود به حساب کاربری
-            </a>
-        </li>
-
-    </ul>
-</nav>
+<div id="header"></div>
 <!-- Hero Slider -->
 <div class="blaze-slider hero-slider">
     <div class="blaze-container">
-        <div class="blaze-track-container">
+        <div class="blaze-track-container rounded-4">
             <div class="blaze-track">
                 <div class="blaze-slide hero-slide">
-                    <img src="images/MainSlider/1%20Edited.jpg" alt="بیمه خودرو">
+                    <img src="images/MainSlider/1%20Edited.jpg" alt="خرید بیمه">
                     <div class="hero-content">
                         <h1>با آرامش خاطر بیمه بخرید</h1>
                         <p>نمایندگی ۶۵۶۹ – بیمه سینا</p>
-                        <a href="#" class="hero-btn">خرید بیمه</a>
+                        <a href="#" class="hero-btn rounded-4">خرید بیمه</a>
                     </div>
                 </div>
                 <div class="blaze-slide hero-slide">
-                    <img src="images/MainSlider/2%20Edited.jpg" alt="بیمه مسئولیت">
+                    <img src="images/MainSlider/2%20Edited.jpg" loading="lazy" alt="بیمه مسئولیت">
                     <div class="hero-content">
                         <h1>پوشش کامل بیمه مسئولیت</h1>
                         <p>امنیت کسب‌وکار شما با ما</p>
-                        <a href="tel:+989184449208" class="hero-btn">مشاوره رایگان</a>
+                        <a href="tel:+989184449208" class="hero-btn rounded-4">مشاوره رایگان</a>
                     </div>
                 </div>
                 <div class="blaze-slide hero-slide">
-                    <img src="images/MainSlider/3%20Edited.jpg" alt="بیمه عمر">
+                    <img src="images/MainSlider/4Edited.jpg" loading="lazy" alt="بیمه">
                     <div class="hero-content">
-                        <h1>بیمه عمر</h1>
-                        <p>آینده‌ای مطمئن برای خانواده‌تان</p>
-                        <a href="#" class="hero-btn">اطلاعات بیشتر</a>
+                        <h1>بیمه یک نیاز نیست</h1>
+                        <p>یک ضرورته</p>
+                        <a href="#" class="hero-btn rounded-4">خرید بیمه</a>
                     </div>
                 </div>
                 <div class="blaze-slide hero-slide">
-                    <img src="images/MainSlider/4Edited.jpg" alt="بیمه">
-                    <div class="hero-content">
-                        <h1>بیمه یک نیاز نیست!</h1>
-                        <p>یک ضرورته!</p>
-                        <a href="#" class="hero-btn">خرید بیمه</a>
-                    </div>
-                </div>
-                <div class="blaze-slide hero-slide">
-                    <img src="images/MainSlider/5Edited.jpg" alt="بیمه درمان">
+                    <img src="images/MainSlider/5Edited.jpg" loading="lazy" alt="بیمه درمان">
                     <div class="hero-content">
                         <h1>هزینه های درمان زیاده؟</h1>
-                        <p>خیالت با بیمه راحته!</p>
-                        <a href="tel:+989184449208" class="hero-btn">مشاوره رایگان</a>
+                        <p>خیالت با بیمه راحته</p>
+                        <a href="tel:+989184449208" class="hero-btn rounded-4">مشاوره رایگان</a>
                     </div>
                 </div>
                 <div class="blaze-slide hero-slide">
-                    <img src="images/MainSlider/6.jpg" alt="بیمه">
+                    <img src="images/MainSlider/6.jpg" loading="lazy" alt="بیمه">
                     <div class="hero-content">
                         <h1>بیمه عمر</h1>
                         <p>آینده‌ای مطمئن برای خانواده‌تان</p>
-                        <a href="tel:+989184449208" class="hero-btn">تماس با ما</a>
+                        <a href="tel:+989184449208" class="hero-btn rounded-4">تماس با ما</a>
                     </div>
                 </div>
             </div>
@@ -311,13 +158,7 @@
         </div>
     </div>
 </div>
-<a href="tel:+989184449208">
-    <i class="fa-solid fa-mobile-vibrate VibratingPhone fixedCallBtn"
-       title="Mobile Phone Number"></i>
-</a>
-<a href="#top" class="backToTopBtn">
-    <i class="fa-solid fa-arrow-up"></i>
-</a>
+
 <!-- ===== Blaze slider (copy this into body) ===== -->
 <div class="orgText">شرکت‌هایی که به ما اعتماد کرده‌اند 👇</div>
 <div class="blaze-slider my-blaze">
@@ -343,23 +184,21 @@
     </div>
 </div>
 <!-- ============================================ -->
-
-<!-- Blaze JS (CDN) -->
-<script src="https://unpkg.com/blaze-slider/dist/blaze-slider.min.js"></script>
-<!-- Bootstrap js-->
-<script src="js/bootstrap/bootstrap.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const heroSliderEl = document.querySelector('.hero-slider');
+        const el = document.querySelector('.hero-slider');
+        if (!el) return;
 
-        new BlazeSlider(heroSliderEl, {
+        new BlazeSlider(el, {
             all: {
-                loop: true,               // اسلایدر بی‌نهایت بچرخه
-                autoplay: true,           // فعال‌سازی اتوپلی
-                autoplayInterval: 4000,   // هر ۴ ثانیه یکبار عوض بشه
-                enableArrows: true,       // فلش‌های راست و چپ
-                enablePagination: true    // نقطه‌های زیرش
-            }
+                loop: true,
+                slidesToShow: 1,
+                slideGap: '12px',
+                enableAutoplay: true,
+                autoplayInterval: 2000,
+                enablePagination: true,
+                transitionDuration: 550
+            },
         });
     });
 </script>
@@ -383,5 +222,7 @@
         });
     });
 </script>
+
+<div id="footer"></div>
 </body>
 </html>
